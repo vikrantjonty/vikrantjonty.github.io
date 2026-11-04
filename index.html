@@ -1,54 +1,67 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Vikrant Kumar | Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Vikrant Kumar's portfolio: software testing, cybersecurity learning, and music." />
+  <title>Vikrant Kumar | Tech & Creativity</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #101827;
-      color: white;
-      text-align: center;
-      padding: 40px 20px;
-      line-height: 1.6;
-    }
-    section {
-      background: #1c293b;
-      padding: 25px;
-      margin: 20px auto;
-      border-radius: 14px;
-      max-width: 650px;
-    }
-    h1 { color: #74c7ff; }
-    h2 { color: #a3d8ff; }
+    :root { color-scheme: dark; --bg:#080e1a; --panel:#111c2c; --line:#24354c; --text:#f3f7ff; --muted:#afbed3; --accent:#66ddc2; }
+    * {box-sizing:border-box}
+    html {scroll-behavior:smooth}
+    body {margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;background:radial-gradient(circle at 80% 0%,#16364b 0%,var(--bg) 42%);color:var(--text);line-height:1.65}
+    a {color:inherit;text-decoration:none}
+    .wrap {width:min(1080px,calc(100% - 40px));margin:auto}
+    header {border-bottom:1px solid var(--line);background:#080e1acb;position:sticky;top:0;backdrop-filter:blur(12px);z-index:2}
+    nav {display:flex;justify-content:space-between;align-items:center;gap:20px;padding:17px 0}
+    .logo {font-size:1.25rem;font-weight:850;letter-spacing:-1px;color:var(--accent)}
+    .links {display:flex;gap:18px;flex-wrap:wrap;color:var(--muted);font-size:.9rem}
+    .links a:hover, footer a:hover {color:var(--accent)}
+    .hero {padding:100px 0 75px;max-width:830px}
+    .eyebrow {color:var(--accent);font-size:.82rem;letter-spacing:2.5px;font-weight:700;text-transform:uppercase}
+    h1 {font-size:clamp(2.8rem,8vw,5.5rem);line-height:1.08;letter-spacing:-3px;margin:14px 0 20px}
+    h1 span {color:var(--accent)}
+    .lead {font-size:1.2rem;max-width:680px;color:var(--muted)}
+    .buttons {display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+    .btn {background:var(--accent);color:#05231c;padding:12px 20px;border-radius:10px;font-weight:800}
+    .btn.secondary {background:transparent;border:1px solid #5b718b;color:var(--text)}
+    section {padding:50px 0;scroll-margin-top:85px}
+    h2 {font-size:2rem;letter-spacing:-.7px;margin:0 0 12px}
+    .intro {color:var(--muted);max-width:750px;margin-bottom:25px}
+    .grid {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+    .card {background:linear-gradient(145deg,#152339,#101a29);border:1px solid var(--line);border-radius:18px;padding:25px;min-height:250px;transition:transform .2s,border-color .2s}
+    .card:hover {transform:translateY(-4px);border-color:#4c9d95}
+    .card .symbol {font-size:1.8rem}
+    .card h3 {margin:16px 0 10px;font-size:1.2rem}
+    .card p {color:var(--muted);font-size:.95rem}
+    .status {display:inline-block;margin-top:10px;border:1px solid #4b6b7e;border-radius:99px;padding:4px 10px;color:#aeead9;font-size:.77rem}
+    .about {background:#101b2a;border:1px solid var(--line);border-radius:18px;padding:26px;color:var(--muted)}
+    .about strong {color:var(--text)}
+    .music {border:1px solid var(--line);border-radius:18px;padding:28px;background:linear-gradient(110deg,#22203b,#101d2b)}
+    .music p {color:var(--muted)}
+    footer {border-top:1px solid var(--line);padding:32px 0 50px;color:var(--muted);font-size:.9rem}
+    footer a {text-decoration:underline;text-underline-offset:3px}
+    @media(max-width:760px){.hero{padding:70px 0 45px}.grid{grid-template-columns:1fr}.links{gap:10px;font-size:.8rem}.card{min-height:0}h1{letter-spacing:-1.5px}}
   </style>
 </head>
 <body>
-  <h1>Hi, I'm Vikrant 👋</h1>
-  <p>Software Testing | Cybersecurity Learner</p>
-  <p>Musician 🎸 | Aspiring Pilot ✈️</p>
-
-  <section>
-    <h2>About Me</h2>
-    <p>
-      I'm an aspiring IT professional with a
-      background in software testing and a
-      growing interest in cybersecurity.
-      I also love singing and playing guitar.
-    </p>
-  </section>
-
-  <section>
-    <h2>My Projects</h2>
-    <p>My first portfolio website</p>
-    <p>More IT projects coming soon!</p>
-  </section>
-
-  <section>
-    <h2>My Journey</h2>
-    <p>Learning, building, and improving every day.</p>
-  </section>
+  <header><nav class="wrap"><a class="logo" href="#top">VK<span style="color:white">.</span></a><div class="links"><a href="#about">About</a><a href="#projects">Projects</a><a href="#music">Music</a><a href="#contact">Contact</a></div></nav></header>
+  <main class="wrap" id="top">
+    <div class="hero">
+      <div class="eyebrow">Tech • Creativity • Continuous learning</div>
+      <h1>Hi, I'm Vikrant.<br><span>I build my future.</span></h1>
+      <p class="lead">Software testing graduate exploring cybersecurity and building hands-on projects. Singer, guitarist, and aspiring pilot with a curiosity that goes beyond one career path.</p>
+      <div class="buttons"><a class="btn" href="#projects">Explore My Projects</a><a class="btn secondary" href="#about">More About Me</a></div>
+    </div>
+    <section id="about"><h2>About Me</h2><div class="about">I studied <strong>software testing in 2021</strong> and am now refreshing my technical foundations while learning cybersecurity. This portfolio documents what I build and learn along the way. Outside technology, I enjoy <strong>singing and playing guitar</strong>, and one of my long-term dreams is to become a pilot.</div></section>
+    <section id="projects"><h2>Selected Projects & Learning</h2><p class="intro">An honest view of my progress. These are practice projects and learning plans, not professional client assignments.</p><div class="grid">
+      <article class="card"><div class="symbol">🌐</div><h3>Personal Portfolio Website</h3><p>A responsive website built with HTML and CSS and published through GitHub Pages. This site is my first web project.</p><span class="status">Built • You're viewing it</span></article>
+      <article class="card"><div class="symbol">🧪</div><h3>Manual Testing Case Study</h3><p>Planned practice: write test cases, run tests on a demo shopping website, and document results and bug reports.</p><span class="status">Planned practice project</span></article>
+      <article class="card"><div class="symbol">🛡️</div><h3>Cybersecurity Learning Lab</h3><p>Planned write-ups on networking, Linux, web security fundamentals, and authorized training labs.</p><span class="status">Learning roadmap</span></article>
+    </div></section>
+    <section id="music"><h2>Music & Creativity</h2><div class="music"><h3>🎸 Beyond the screen</h3><p>Music has always been part of my life. I'm returning to regular vocal practice and guitar, with performances and covers to share as I create them.</p><span class="status">Videos coming soon</span></div></section>
+    <section id="contact"><h2>Let's Connect</h2><p class="intro">Interested in technology, music, or following my learning journey? You can connect with me through the platforms below once I add my profile links.</p><p><strong>Next update:</strong> add real GitHub, LinkedIn, and Instagram links here.</p></section>
+  </main>
+  <footer><div class="wrap">© 2026 Vikrant Kumar · Built with HTML & CSS · Learning in public.</div></footer>
 </body>
 </html>
